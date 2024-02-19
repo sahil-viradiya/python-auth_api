@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "auth-api"
+version = "0.1.0"
+description = ""
+authors = ["sahil-viradiya <sahilviradiya999@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.2"
+uvicorn = "^0.27.1"
+sqlalchemy = "^2.0.27"
+psycopg2 = {extras = ["binary"], version = "^2.9.9"}
+pydantic = {extras = ["email"], version = "^2.6.1"}
+asyncpg = "^0.29.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
